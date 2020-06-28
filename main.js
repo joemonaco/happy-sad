@@ -16,4 +16,4 @@ function reset() {
   setTimeout(function() {
     bad.classList.add("bad-gif");
   }, 3000);
-}
+} 
