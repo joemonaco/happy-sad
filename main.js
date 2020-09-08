@@ -148,7 +148,7 @@
       }
       requestAnimationFrame(render);
 
-      ctx.font = "30px Comic Sans MS";
+      ctx.font = "6rem Comic Sans MS";
       ctx.fillStyle = "#E75480";
       ctx.textAlign = "center";
       ctx.fillText("You're Beautiful", canvas.width / 2, canvas.height / 2);
