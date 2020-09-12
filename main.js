@@ -141,6 +141,8 @@
       Render
     ********************/
 
+    // WAIT TILL IMAGE IS LOADED.
+
     function render() {
       ctx.clearRect(0, 0, X, Y);
       for (var i = 0; i < shapes.length; i++) {
@@ -151,7 +153,12 @@
       ctx.font = "6rem Comic Sans MS";
       ctx.fillStyle = "#E75480";
       ctx.textAlign = "center";
+
       ctx.fillText("You're Beautiful", canvas.width / 2, canvas.height / 2);
+      var img = new Image();
+      img.src = "images/download.jpg";
+
+      ctx.drawImage(img, 0, 0);
     }
 
     render();
